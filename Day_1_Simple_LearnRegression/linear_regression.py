@@ -1,11 +1,10 @@
-print(__doc__)
-
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn import datasets, linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 import pandas as pn
 
+#Loading Diabetes Datasets for linear regression experiment
 diabetes = datasets.load_diabetes()
 diabetes_X = diabetes.data[:, np.newaxis, 2]
 
@@ -18,12 +17,13 @@ test_diabetes_Y = diabetes.target[-20:]
 
 regression = linear_model.LinearRegression()
 
+#Fitting the data into regression
 regression.fit(train_diabetes_X,train_diabetes_Y)
 
+#Getting Predictions
 diabetes_Y_predict = regression.predict(test_diabetes_X)
 
 print('Coefficients: \n', regression.coef_)
-#print('Mean Squared Error: %2f', mean_squared_error(test_diabetes_Y, diabetes_Y_predict))
 print('Variance Score: %2f' % r2_score(test_diabetes_Y, diabetes_Y_predict))
 
 plt.scatter(test_diabetes_X, test_diabetes_Y, color='black')
