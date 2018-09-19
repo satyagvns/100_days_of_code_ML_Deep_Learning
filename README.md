@@ -12,3 +12,7 @@ Started my 100 days code journey in Python 0 to 100 with Machine Learning
 - What is Linear Regression
 - Formulas of linear regression h(x) = Q0 + Q1(x)
 - Diabetes data has been used to generate report
+
+#### Day 2 - Linear regression in Python with definitions
+- Implement linear regression without predefined functions
+- Detailed understanding on how linear regression works
