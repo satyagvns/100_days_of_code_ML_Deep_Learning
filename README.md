@@ -16,3 +16,9 @@ Started my 100 days code journey in Python 0 to 100 with Machine Learning
 #### Day 2 - Linear regression in Python with definitions
 - Implement linear regression without predefined functions
 - Detailed understanding on how linear regression works
+
+#### Day 3 - Face Detection in python using opencv
+- Implemented Face detection using opencv
+
+#### Day 4 - Understanding Python Basic Concepts
+- Examples for Loops, strings, arithmatic operations
